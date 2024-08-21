@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop360 - Trang Chủ</title>
+    <link rel="shortcut icon" href="../Assest/Home/Icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../CSS/Reponsive/shop_repo.css"/>
+    <link rel="stylesheet" href="../CSS/shop.css"/>
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="Arrow_Up">
+        <a href="#"><i class="fa-solid fa-caret-up" style="color: white;"></i></a>
+    </div>
+    <div id="blurredBackground" class="blurred"></div>
+    <div style="display: none;">
+
+    </div>
+    <header>
+        <nav>
+            <div class="Nav_Logo">
+                <div>
+                    <a href="../index.html"><img src="../Assest/Home/logo.png" url="logo" /></a>
+                </div>
+            </div>
+            <div class="menu_left">
+                <ul>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../HTML/GioiThieu.html">Giới thiệu</a></li>
+                    <li>
+                        <a href="#" class="toggle-submenu"><i class="fa-solid fa-chevron-right"></i> Mua sách</a>
+                        <ul class="submenu animate__animated animate__fadeInDown">
+                            <li><a href="../HTML/Shop_VN.html" >Sách trong nước</a>
+                                <hr />
+                            </li>
+                            <li><a href="../HTML/Shop_International.html" >Sách nước ngoài</a>
+                                <hr />
+                            </li>
+                            <li><a href="../HTML/Shop_Edu.html" >Sách giáo khoa</a>
+                                <hr />
+                            </li>
+                            <li><a href="../HTML/Shop.html" >Truyện tranh</a>
+                                <hr />
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../Hightlight.html">Hightlight</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Chuyển ngôn ngữ tại đây">Ngôn ngữ: VN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_right">
+                <ul>
+                    <li>
+                        <div>
+                            <input class="input" type="text" placeholder="Nhập nội dung cần tìm">
+                            <a href="#"> <i class="fa-solid fa-magnifying-glass" style="font-size: 24px;"></i></a>
+                        </div>
+                    </li>
+                   <li><a href="#"><i class="fa-solid fa-user"></i></a></li> <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="shop">
+        <div>
+            <p><a href="">Trang chủ</a> > <span style="color: #c92127; font-weight: bold;">Truyện tranh</span></p>
+        </div>
+        <div class="shop_container">
+            <div class="Nav_Category">
+                <h2>Danh sách sản phẩm</h2>
+                <ul>
+                    <li><a href="#" style="color: rgb(255, 68, 0); font-weight: bold;"><p>Truyện tranh</p></a></li>
+                    <li><a href="../HTML/Shop_VN.html"><p>Sách trong nước</p></a></li>
+                    <li><a href="../HTML/Shop_International.html"><p>Sách nước ngoài</p></a></li>
+                    <li><a href="../HTML/Shop_Edu.html"><p>Sách giáo khoa</p></a></li>
+                    <li><a href="../HTML/Shop_VPP.html"><p>Văn phòng phẩm</p></a></li>
+                    <li><a href="#"><p>Khác</p></a></li>
+                </ul>
+                <hr/>
+                <h2>Giá tiền</h2>
+                <ul>
+                    <li><input type="radio" id="vehicle1" name="vehicle" value="Bike"> 0 - 50.000đ</li>
+                    <li><input type="radio" id="vehicle1" name="vehicle" value="Bike"> 50.000đ - 100.000đ</li>
+                    <li><input type="radio" id="vehicle1" name="vehicle" value="Bike"> 100.000đ - 150.000đ</li>
+                    <li><input type="radio" id="vehicle1" name="vehicle" value="Bike"> 150.000đ - 200.000đ</li>
+                    <li><input type="radio" id="vehicle1" name="vehicle" value="Bike"> 200.000đ trở lên</li>
+                </ul>
+                <hr/>
+            </div>
+            <div class="BookShelf">
+                <div class="Sort">
+                    <p>Sắp xếp theo: </p>
+                    <select class="custom-select">
+                        <option value="1">Bán Chạy Tuần</option>
+                        <option value="2">Bán Chạy Tháng</option>
+                        <option value="3">Sách Của Ngày</option>
+                        <option value="4">Giảm Giá</option>
+                    </select>
+                </div>
+                <hr/>
+                <div class="BookShelf_content">
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                    <a href="../HTML/Book/AttackOnTitan.html" class="Book">
+                        <div class="Book_content">
+                            <div>
+                                <img src="../Assest/Home/hay.png"/>
+                            </div>
+                            <p>Attack On Titan (tập 11)</p>
+                            <p>61.200đ</p>
+                            <p>72.000đ</p>
+                            <p> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
+                         </div>
+                    </a>
+                </div>
+                <div class="Next_Previous">
+                        <a href="#"><i class="fa-solid fa-caret-left"></i></a>
+                        <p> 1 </p>
+                        <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="Subcription">
+            <p><i class="fa-solid fa-envelope"></i> Đăng kí nhận thông tin sách mới</p>
+            <div class="form">
+               <input class="search" type="text" placeholder="Nhập email của bạn..." />
+               <input class="nut" type="button" name="Xác nhận" value="Xác nhận" onclick="showPopup()"/>
+            </div>
+        </div>
+    </div>
+    <div class="Pop-up" id="popup" >
+        <a onclick="hidePopup()"><i class="fa-solid fa-xmark" style="float: right;"></i></a>
+        <div class="img_container">
+            <img src="../Assest/Home/logo.png"/>
+        </div>
+        <div class="Content">
+            <h3>Thông báo</h3>
+            <p>Chúc mừng bạn đã đăng kí thành công!</p>
+            <p>Chúng tôi sẽ cố gắng cập nhật sách mới nhất mỗi tuần tới mail!</p>
+            <p><i class="fa-solid fa-heart"></i> Chúc bạn có một ngày tốt lành <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class = "Footer_content">
+           <div class="Superlink">
+                <div class="Link">
+                    <h3>Website</h3>
+                    <ul>
+                        <li><a href="#">Đại học Mở TP.HCM</a></li>
+                        <li><a href="#">Wikipedia</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Sách phổ biến</h3>
+                    <ul>
+                        <li><a href="#">Đắc nhân tâm</a></li>
+                        <li><a href="#">Nhà giả kim</a></li>
+                        <li><a href="#">Fantastic Beasts đại án</a></li>
+                        <li><a href="#">Sự mờ ám trong đêm</a></li>
+                        <li><a href="#">Không gia đình</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Thể loại sách</h3>
+                    <ul>
+                        <li><a href="#">Truyện tranh</a></li>
+                        <li><a href="#">Sách giáo khoa</a></li>
+                        <li><a href="#">Sách trong nước</a></li>
+                        <li><a href="#">Sách ngoài nước</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Khác</h3>
+                    <ul>
+                        <li><a href="#">Mua sách</a></li>
+                        <li><a href="#">Hỗ trợ</a></li>
+                        <li><a href="#">Đánh giá</a></li>
+                    </ul>
+                </div>
+           </div>
+            <hr/>
+           <div class="Conclusion">
+            <div class="Conclusion_left">
+                <h3 style="color: blue;">Bookshop 360: Đồng hành cùng bạn - khám phá tri thức</h3>
+                <p style="text-align: justify;">
+                    BookShop 360 trang mua bán sách trực tuyến uy tin bật nhất Việt Nam. Cam đoan chất lượng sản phẩm cũng như là hỗ trợ khách hàng tận tâm.
+                </p>
+                <p style="font-weight:bold; text-align:  justify;">
+                    Lưu ý: BookShop 360 nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng.
+                </p>
+            </div>
+            <div class="Conclusion_right">
+                <div>
+                    <img src="../Assest/Home/logo.png"/>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                </ul>
+            </div>
+       </div>
+        </div>
+        <a>
+            <p>© 2024 Bản quyền thuộc về Junior Thành và Thanh Phong. Bảo lưu mọi quyền sở hữu.</p>
+        </a>
+    </footer>
+    <script src="../JavaScript/Nav.js"></script>
+    <script src="../JavaScript/Pop-up.js"></script>
+    <script src="../JavaScript/Arrow_up.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="..//code.tidio.co/nonyzqrlawdmulhzdgjx19a3cpwzgq1h.js" async></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

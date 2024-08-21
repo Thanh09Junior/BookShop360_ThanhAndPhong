@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookShop360 - Main Page</title>
+    <link rel="shortcut icon" href="./Assest/Home/Icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="./Assest/preload.gif" alt="spinner">
+        <div class="loading-text">0%</div>
+      </div>
+    <div id="Arrow_Up">
+        <a href="#"><i class="fa-solid fa-caret-up" style="color: white;"></i></a>
+    </div>
+    <header class="animate__animated animate__fadeInDown">
+        <nav>
+            <div class="Nav_Logo">
+                <div>
+                    <a href="#"><img src="./Assest/Home/logo.png" url="logo" /></a>
+                </div>
+            </div>
+            <div class="menu_left">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li>
+                        <a href="#" class="toggle-submenu"><i class="fa-solid fa-chevron-right"></i> Book Shop</a>
+                        <ul class="submenu animate__animated animate__fadeInDown">
+                            <li><a href="#" target="_blank">Unavailable</a>
+                                <hr />
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="toggle-submenu">Hightlight</a>
+                    </li>
+                    <li>
+                        <a href="./index.html" title="Change Page Language">Language: EN</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_right">
+                <ul>
+                    <li>
+                        <div>
+                            <input class="input" type="text" placeholder="Search">
+                            <a href="#"> <i class="fa-solid fa-magnifying-glass" style="font-size: 24px;"></i></a>
+                        </div>
+                    </li>
+                   <li><a href="#"><i class="fa-solid fa-user"></i></a></li> <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="Introduction_Page">
+        <div class="video-container">
+            <div class="Black_glass"></div>
+            <video autoplay muted loop>
+                <source src="./Assest/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="Introduction">
+            <div class="left_introduction">
+                <ul class="ads">
+                    <li>
+                        <ul class="ad">
+                            <li>
+                                <p style="font-size: 60px; margin: 0; padding: 0;"><span style="color: #5270fc">BookShop </span><span style="color: orange">360</span></p>
+                            </li>
+                            <li>
+                                <p class="animate__animated animate__fadeInLeft" style="font-size: 40px;">A place where you can discover books that have a special meaning for you.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a href="#Book_option">
+                    <p>Find out</p>
+                </a>
+            </div>
+            <div class="right_introduction animate__animated animate__fadeInRight">
+                <p style="font-size: 48px; margin: 0; padding: 0; color: orange">Book of the Day</p>
+                <hr/>
+               <div class="Bookoftheday">
+                  <p><p style="color: orange; font-weight: bold; margin: 0;">Book name</p> Ori and the Will of the Wisps</p>
+                  <p><p style="color: orange; font-weight: bold; margin: 0;">Description</p>The journey of Ori is an emotional odyssey where light and darkness intertwine in a breathtaking world. Each step, each challenge, brings moments of profound reflection, immersed in the beauty of art and music.</p>
+                  <p><p style="color: orange; font-weight: bold; margin: 0;">Author</p> Moon Studios</p>
+                  <div class="SeeMore">
+                        <a href="#"><p>Show more</p></a>
+                        <a onclick=""><p>Buy book</p></a>
+                  </div>
+               </div>
+            </div>
+        </div>
+        </div>
+        <div class="Category">
+            <ul class="tasks">
+                <li>
+                    <a href="#">
+                        <ul class="task">
+                            <li><a href="#"><img src="./Assest/Home/truyentranh.png" url="truyen tranh"
+                                        style="width:70px;" /></a></li>
+                            <li><a href="#">Comic book</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ul class="task">
+                            <li><a href="#"><img src="./Assest/Home/vanphongpham.png" url="van phong pham"
+                                        style="width:50px;  margin-left: 35px;" /></a></li>
+                            <li><a href="#">
+                                Stationery items</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ul class="task">
+                            <li><a href="#"><img src="./Assest/Home/sachgiaokhoa.png" url="sach giao khoa"
+                                        style="width:70px;  margin-left: 25px;" /></a></li>
+                            <li><a href="#">Education book</a></li>
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ul class="task">
+                            <li><a href="#"><img src="./Assest/Home/sachnuocngoai.png" url="sach nuoc ngoai"
+                                        style="width:70px;  margin-left: 30px;" /></a></li>
+                            <li><a href="#">International book</a></li>
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="Book_Show">
+            <div class="TopSellBook" id = "HOT" data-aos="fade-right">
+                <div class="slideshow-container ">
+                    <div class="mySlides fade">
+                        <img src="./Assest/Home/ori.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./Assest/Home/harry_potter.webp">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./Assest/Home/dacnhantam.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./Assest/Home/thobaymau.jpg">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./Assest/Home/tuoitre.png">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="./Assest/Home/ad_sach.jpg">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div class="dot_container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </div>
+                <div class="Book_info">
+                    <h3></h3>
+                    <hr style="border-color: #f6ff00"/>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#"><p>Buy now</p></a>
+                </div>
+            </div>
+            <div class="BookSection_Introduction" data-aos="fade-right">
+                <p>Qoute about Books</p>
+                <p>
+                    “The most important thing is to read as much as possible, just like I did. It will help you understand what makes a good piece of writing and expand your vocabulary.”</p>
+                <p style="color:#00ffd9">J. K. Rowling</p>
+            </div>
+        <div class="Book_Container" id="Book_option" data-aos="fade-right">
+            <h3>Book Section</h3>
+            <ul>
+                <li><a href="#Comic" class="Red_bold">Comic Book</a></li>
+                <li><a href="#Stationery">Stationery Item</a></li>
+                <li><a href="#Textbooks">Education Book</a></li>
+                <li><a href="#ForeignBooks">Foreign Book</a></li>
+            </ul>
+            <hr style="margin-top: 0;"/>
+            <div class="ShowCase">
+                <div class="Left_ShowCase">
+                    <div class="Book" id="Book1" onmouseover="showInfo('Book1')">
+                        <p>01</p>
+                        <div class="img_book">
+                            <img src="./Assest/Home/ori.png"/>
+                        </div>
+                        <div class="Book_content">
+                            <p>Book: Ori and the Will of the Wisps</p>
+                            <p>Author: Moon Studio</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Book" id="Book2" onmouseover="showInfo('Book2')">
+                        <p>02</p>
+                        <div class="img_book">
+                            <img src="./Assest/Home/thobaymau.jpg"/>
+                        </div>
+                        <div class="Book_content">
+                            <p>Book: "Thỏ Bảy Màu"</p>
+                            <p>Author: Huynh Thai Ngoc</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Book" id="Book3" onmouseover="showInfo('Book3')">
+                        <p>03</p>
+                        <div class="img_book">
+                            <img src="./Assest/Home/harry_potter.webp"/>
+                        </div>
+                        <div class="Book_content">
+                            <p>Book: Harry Potter</p>
+                            <p>Author: J.K.Rowling</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Book" id="Book4" onmouseover="showInfo('Book4')">
+                        <p>04</p>
+                        <div class="img_book">
+                            <img src="./Assest/Home/conan.jpg"/>
+                        </div>
+                        <div class="Book_content">
+                            <p>Book: Detective Conan</p>
+                            <p>Author: Aoyama Gosho</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Book" id="Book5" onmouseover="showInfo('Book5')">
+                        <p>05</p>
+                        <div class="img_book">
+                            <img src="./Assest/Home/firen.jpg"/>
+                        </div>
+                        <div class="Book_content">
+                            <p>Book: Frieren – Beyond Journey’s End</p>
+                            <p>Author: Yamada Kanehito</p>
+                            <div>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Right_ShowCase">
+                    <div id="BookInfo">
+                        <div>
+                            <img src="./Assest/Home/ori.png">
+                        </div>
+                        <div>
+                            <h3>Ori and the Will of the Wisps</h3>
+                            <p>Author: Moon Studio</p>
+                            <p>Price: 300.000đ</p>
+                            <p>Category: Comic Book</p>
+                            <p>Description:</p>
+                            <ul>
+                                <li><p>- “Ori and the Will of the Wisps” is a premium art book that focuses entirely on the stunning concept art, sketches, and storyboards that have created a true modern masterpiece.</p> </li>
+                                <li><p>Each section is accompanied by commentary from the artists at Moon Studios, and the book includes an in-depth interview with the key figures behind the game’s art. This creates an enlightening journey through the entire development process of the game.</p></li>
+                            </ul>
+                            <a href="#"><p>Buy Now</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin-top: 0;"/>
+            <a href="#" style="text-align: center;"><p>Show More</p></a>
+         </div>
+        <div class="Subcription">
+                <p><i class="fa-solid fa-envelope"></i> Subcription to get the lastest books</p>
+                <div class="form">
+                   <input class="search" type="text" placeholder="Email..." />
+                   <input class="nut" type="button" name="Xác nhận" value="Send" onclick="showPopup()"/>
+                </div>
+            </div>
+        </div>
+        <div class="Pop-up" id="popup" >
+            <a onclick="hidePopup()"><i class="fa-solid fa-xmark" style="float: right;"></i></a>
+            <div class="img_container">
+                <img src="./Assest/Home/logo.png"/>
+            </div>
+            <div class="Content">
+                <h3>Announcements</h3>
+                <p>Congratulations on successfully registering!</p>
+                <p>We will strive to update you with the latest books every week via email!</p>
+                <p><i class="fa-solid fa-heart"></i> Wish you have a wonderful day <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class = "Footer_content">
+           <div class="Superlink">
+                <div class="Link">
+                    <h3>Website</h3>
+                    <ul>
+                        <li><a href="#">Open University (OU) </a></li>
+                        <li><a href="#">Wikipedia</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Popular Book</h3>
+                    <ul>
+                        <li><a href="#">The Alchemist</a></li>
+                        <li><a href="#">Fantastic Beasts</a></li>
+                        <li><a href="#">The Murky Night</a></li>
+                        <li><a href="#">Nobody’s Boy</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="#">Comic book</a></li>
+                        <li><a href="#">Education book</a></li>
+                        <li><a href="#">Vietnamse book</a></li>
+                        <li><a href="#">International book</a></li>
+                    </ul>
+                </div>
+                <div class="Link">
+                    <h3>Other</h3>
+                    <ul>
+                        <li><a href="#">Buy book</a></li>
+                        <li><a href="#">Get help</a></li>
+                        <li><a href="#">Rating</a></li>
+                    </ul>
+                </div>
+           </div>
+            <hr/>
+           <div class="Conclusion">
+            <div class="Conclusion_left">
+                <h3 style="color: blue;">BBookshop 360: Your Companion in Exploring Knowledge</h3>
+                <p style="text-align: justify;">
+                    BookShop 360 is the most reputable online bookstore in Vietnam. We guarantee the quality of our products and provide dedicated customer support. 
+                </p>
+                <p style="font-weight:bold; text-align:  justify;">
+                    Note: BookShop 360 accepts online orders and delivers to your doorstep. We do NOT support in-person purchases or pickups at our office.
+                </p>
+            </div>
+            <div class="Conclusion_right">
+                <div>
+                    <img src="./Assest/Home/logo.png"/>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+                </ul>
+            </div>
+       </div>
+        </div>
+        <a>
+            <p>2024 © Junior Thanh and Thanh Phong. All rights reserved.</p>
+        </a>
+    </footer>
+    <script src="./JavaScript/SlideshowEN.js"></script>
+    <script src="./JavaScript/Nav.js"></script>
+    <script src="./JavaScript/Pop-up.js"></script>
+    <script src="./JavaScript/TrangChu_MuaSamEN.js"></script>
+    <script src="./JavaScript/Arrow_up.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JavaScript/PreLoader.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+
+/*----------- Very big screen ------------*/
+@media only screen and (min-width: 1550px) and (max-width: 1920px) {
+    .menu_left >ul > li > a {
+        font-size: 18px;
+    }
+
+    .Bookoftheday{
+        font-size: 18px;
+    }
+
+    .ad > li:first-child > p{
+        font-size: 55px !important;
+    }
+
+    .ad > li:last-child> p{
+        font-size: 50px !important;
+    }
+
+    .task {
+        font-size: 18px;
+    }
+}
+
+
+/*----------- Very big screen ------------*/
+@media only screen and (min-width: 1177px) and (max-width: 1310px) {
+    .menu_left >ul > li > a {
+        font-size: 12px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1177px){
+   .menu_left{
+        display: none;
+   }
+
+   .menu_right{
+    display: none;
+   }
+}
+
+
+/*----------- Very big screen ------------*/
+
+@media only screen and (max-width: 1023px){
+    *{
+        display: none;
+    }
+    
+    }

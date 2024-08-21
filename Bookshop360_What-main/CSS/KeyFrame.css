@@ -1,0 +1,17 @@
+/* Hieu ung danh may */
+@keyframes DanhChu {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* Hieu ung con tro nhap nhay*/
+  @keyframes ConTro {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}

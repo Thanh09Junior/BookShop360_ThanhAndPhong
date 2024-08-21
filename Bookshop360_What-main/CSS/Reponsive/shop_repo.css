@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1550px) and (max-width: 1920px) {
+    .menu_left >ul > li > a {
+        font-size: 20px !important;
+    }
+
+    .Nav_Category > ul{
+        font-size: 18px;
+    }
+
+    .BookShelf_content > .Book{
+        font-size: 18px;
+    }
+
+    .Additional > ul{
+        font-size: 18px;
+    }
+}
+
+
+/*----------- Very big screen ------------*/
+@media only screen and (min-width: 1177px) and (max-width: 1310px) {
+    .menu_left >ul > li > a {
+        font-size: 12px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1177px){
+   .menu_left{
+        display: none;
+   }
+
+   .menu_right{
+    display: none;
+   }
+}
+
+@media only screen and (max-width: 1023px){
+    *{
+        display: none;
+    }
+    
+    }
