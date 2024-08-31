@@ -7,9 +7,9 @@
     <title>BookShop360 - Trang Chủ</title>
     <link rel="shortcut icon" href="../Assest/Home/Icon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="../CSS/Reponsive/shop_repo.css" />
-    <link rel="stylesheet" href="../CSS/shop.css" />
     <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../CSS/giohang.css" />
+    <link rel="stylesheet" href="../CSS/Reponsive/index_repo.css" !important />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -17,10 +17,6 @@
 <body>
     <div id="Arrow_Up">
         <a href="#"><i class="fa-solid fa-caret-up" style="color: white;"></i></a>
-    </div>
-    <div id="blurredBackground" class="blurred"></div>
-    <div style="display: none;">
-
     </div>
     <div id="Black_glass"></div>
     <div id="Account" class="Account">
@@ -53,6 +49,11 @@
             </div>
         </div>
     </div>
+    <div class="check_gif">
+        <div>
+            <img src="../Assest_Gif_Video/preloader_gif/checktool.gif" />
+        </div>
+    </div>
     <header class="animate__animated animate__fadeInDown">
         <nav>
             <div class="Nav_Logo">
@@ -62,7 +63,7 @@
             </div>
             <div class="menu_left">
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="../index.html">Trang chủ</a></li>
                     <li><a href="../HTML/GioiThieu.html">Giới thiệu</a></li>
                     <li>
                         <a href="../HTML/Shop.html"> Mua sách</a>
@@ -100,45 +101,57 @@
             </div>
         </nav>
     </header>
-    <section class="shop">
-        <div>
-            <p><a href="">Trang chủ</a> > <span id="category-title" style="color: #c92127; font-weight: bold;"></span>
-            </p>
-        </div>
-        <div class="shop_container">
-            <div class="Nav_Category">
-                <h2>Danh sách sản phẩm</h2>
-                <ul id="category-list">
-                    <!-- Category links -->
-                </ul>
-                <hr />
-                <h2>Giá tiền</h2>
-                <ul id="price-range">
-                    <!-- Price range filters -->
-                </ul>
-                <hr />
+    <section class="Introduction_Page">
+        <div class="Empty_Cart">
+            <h3>Giỏ hàng (0 sản phẩm)</h3>
+            <div class="img_cart">
+                <img src="../Assest/GioHang/ico_emptycart.svg" />
             </div>
-            <div class="BookShelf">
-                <div class="Sort">
-                    <p>Sắp xếp theo: </p>
-                    <select class="custom-select" id="sort-select">
-                        <option value="1">Bán Chạy Tuần</option>
-                        <option value="2">Bán Chạy Tháng</option>
-                        <option value="3">Sách Của Ngày</option>
-                        <option value="4">Giảm Giá</option>
-                    </select>
+            <p>Chưa có sản phẩm nào trong giỏ hàng của bạn</p>
+            <a href="../HTML/Shop.html">
+                <p>Mua sắm ngay</p>
+            </a>
+        </div>
+
+        <div class="Not_empty_cart">
+            <div class="Buy_list">
+                <div class="Buy_list_nav">
+                    <input type="checkbox" id="select-all" name="vehicle1" value="Bike">
+                    <p>Chọn tất cả (1 sản phâm) </p>
+                    <p>Số lượng</p>
+                    <p>Thành tiền</p>
+                    <p>Xoá</p>
                 </div>
-                <hr />
-                <div id="books-content" class="BookShelf_content">
-                    <!-- Books will be loaded here -->
-                </div>
-                <div class="Next_Previous">
-                    <a href="#"><i class="fa-solid fa-caret-left"></i></a>
-                    <p> 1 </p>
-                    <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                <div class="List">
+                    <div class="Items">
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <div class="Items_img">
+                            <img src="../Assest/Home/hay.png" />
+                        </div>
+                        <div class="content">
+                            <p>Attack on titan mùa 3</p>
+                            <p>Giá: 71.500 đ</p>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-caret-left"></i> 1 <i class="fa-solid fa-caret-right"></i></p>
+                            <p>71.500 đ</p>
+                            <a href="#" class="delete-item"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="Pay_Menu">
+                <p>Thành tiền: </p>
+                <hr />
+                <p id="VAT">Tổng Số Tiền (gồm VAT): </p>
+                <a href="#">
+                    <p>THANH TOÁN</p>
+                </a>
+                <p>Lưu ý: Để thanh toán thì quý khách phải có tài khoản đăng nhập. Xin cảm ơn!
+                </p>
+            </div>
         </div>
+
         <div class="Subcription">
             <p><i class="fa-solid fa-envelope"></i> Đăng kí nhận thông tin sách mới</p>
             <div class="form">
@@ -228,12 +241,16 @@
             <p>© 2024 Bản quyền thuộc về Junior Thành và Thanh Phong. Bảo lưu mọi quyền sở hữu.</p>
         </a>
     </footer>
+    <script src="../JavaScript/Arrow_up.js"></script>
     <script src="../JavaScript/Nav.js"></script>
     <script src="../JavaScript/Pop-up.js"></script>
+    <script src="../JavaScript/TrangChu_MuaSam.js"></script>
+    <script src="../JavaScript/Slideshow.js"></script>
     <script src="../JavaScript/Arrow_up.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JavaScript/PreLoader.js"></script>
     <script src="../JavaScript/datasever.js"></script>
-    <script src="../JavaScript/Shop.js"></script>
+    <script src="../JavaScript/Giohang.js"></script>
     <script src="//code.tidio.co/nonyzqrlawdmulhzdgjx19a3cpwzgq1h.js" async></script>
     <script>
         AOS.init();

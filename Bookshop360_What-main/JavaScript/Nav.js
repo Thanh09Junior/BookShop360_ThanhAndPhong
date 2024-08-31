@@ -84,7 +84,7 @@ window.addEventListener('scroll', function() {
 
     if (scrollTop > lastScrollTop && scrollTop > scrollThreshold) {
         // Cuộn xuống
-        header.style.top = '-100px';
+        header.style.top = '-200px';
         setTimeout(() => {
             header.classList.add('hidden');
             header.classList.remove('fixed');
@@ -98,3 +98,71 @@ window.addEventListener('scroll', function() {
     lastScrollTop = scrollTop;
 });
 
+// Khi bấm vào tab "Đăng nhập"
+document.getElementById('loginTab').addEventListener('click', function() {
+    setActiveTab('login');
+});
+
+// Khi bấm vào tab "Đăng ký"
+document.getElementById('registerTab').addEventListener('click', function() {
+    setActiveTab('register');
+});
+
+// Hàm thiết lập tab đang hoạt động
+function setActiveTab(tab) {
+    const loginTab = document.getElementById('loginTab');
+    const registerTab = document.getElementById('registerTab');
+    const loginContent = document.getElementById('loginInfo');
+    const registerContent = document.getElementById('registerInfo');
+
+    if (tab === 'login') {
+        loginTab.style.color = 'red';
+        registerTab.style.color = 'black';
+        loginContent.style.display = 'block';
+        registerContent.style.display = 'none';
+    } else if (tab === 'register') {
+        loginTab.style.color = 'black';
+        registerTab.style.color = 'red';
+        loginContent.style.display = 'none';
+        registerContent.style.display = 'block';
+    }
+}
+
+// Đặt tab "Đăng nhập" là mặc định khi mở popup
+setActiveTab('login');
+
+
+
+// Khi bấm vào biểu tượng có id là 'login'
+document.querySelector('#login').addEventListener('click', function() {
+    const blackGlass = document.getElementById('Black_glass');
+    blackGlass.style.display = 'block';
+    blackGlass.classList.add('Black_glass'); // Thêm class Black_glass
+    const accountPopup = document.getElementById('Account');
+    accountPopup.style.display = 'block';
+    setTimeout(() => accountPopup.classList.add('show'), 10); // Thêm một độ trễ nhỏ để kích hoạt hiệu ứng
+});
+
+// Khi bấm vào Black_glass hoặc nút đóng trong popup
+document.getElementById('Black_glass').addEventListener('click', function() {
+    closeAccountPopup();
+});
+
+// Chọn tất cả các nút "Bỏ qua" và thêm sự kiện cho chúng
+document.querySelectorAll('.Button a:last-child').forEach(function(skipButton) {
+    skipButton.addEventListener('click', function() {
+        closeAccountPopup();
+    });
+});
+
+// Hàm đóng popup và ẩn Black_glass
+function closeAccountPopup() {
+    const accountPopup = document.getElementById('Account');
+    const blackGlass = document.getElementById('Black_glass');
+    accountPopup.classList.remove('show');
+    blackGlass.classList.remove('Black_glass'); // Loại bỏ class Black_glass khi đóng popup
+    setTimeout(() => {
+        accountPopup.style.display = 'none';
+        blackGlass.style.display = 'none';
+    }, 500); // Chờ cho đến khi hiệu ứng kết thúc
+}

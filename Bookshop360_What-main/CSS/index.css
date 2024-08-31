@@ -1,4 +1,3 @@
-@import url(/CSS/KeyFrame.css);
 * {
     font-family: Helvetica, sans-serif, Arial, 'Times New Roman';
     scroll-behavior: smooth;
@@ -26,7 +25,6 @@ ul{
     width: 100%;
     z-index: 9999;
     opacity: 1;
-    transform: opacity 1s linear;
     background-color: #1d1f39;
   }
 
@@ -45,7 +43,7 @@ ul{
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(0, 225, 255); /* Màu chữ */
-    font-size: 18px; /* Kích thước chữ */
+    font-size: 3vh; /* Kích thước chữ */
     font-weight: bold;
 }
 #Arrow_Up{
@@ -94,6 +92,102 @@ body {
     padding: 0;
     margin: 0;
 }
+.Login_Panel{
+    width: 100%;
+    font-size: 2.5vh;
+}
+.Login_Panel > .Selection{
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.Login_Panel > hr{
+   margin-bottom: 5%;
+}
+.Login_Panel > .Selection > a > p:hover{
+    color: red;
+}
+.Login_Panel > h1{
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 3%;
+}
+.Black_glass {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Độ mờ của lớp màng đen */
+    z-index: 100; /* Đảm bảo lớp này nằm phía sau Login_Panel */
+}
+
+
+.Account{
+    position: fixed;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+    font-size: 1em;
+    z-index: 1000;
+}
+
+.Account.show {
+    transform: translate(-50%, -50%);
+}
+
+.Information{
+    margin-left: 6%;
+}
+.Information > a{
+    font-size: 1em;
+}
+.Information > label{
+    font-size: 1em;
+}
+
+.Information > input{
+    display: block;  
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-size: 1em;
+}
+
+.Button{
+    text-align: center;
+    margin-right: 5%;
+}
+
+.Button > a:nth-child(1) > p{
+    width: 40%;
+    background-color: #c92127;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: white;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.Button > a:nth-child(2) > p{
+    width: 40%;
+    border: 1px solid black;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 0 auto;
+}
+
+
+
 /* Menu */
 nav {
     display: flex;
@@ -148,6 +242,7 @@ header>a>p {
 .menu_left {
     position: relative;
     width: 40%;
+    font-size: 2.5vh;
 }
 
 .menu_left>ul{
@@ -155,11 +250,10 @@ header>a>p {
 }
 
 .menu_left>ul>li{
-    margin-right: 1.2rem;
+    margin-right: 1.2em;
 }
 
 .menu_left>ul>li>a {
-    font-size: 16px;
     display: inline-block;
     position: relative;
     font-weight: bold;
@@ -206,6 +300,7 @@ header>a>p {
 /*Menu phần phải*/
 .menu_right {
     width: 25%;
+    font-size: 2.5vh;
 }
 
 .menu_right>ul{
@@ -214,16 +309,14 @@ header>a>p {
     display: flex;
     align-items: center;
 }
-.lang > a{
-margin-left: 15px;
-}
+
 .menu_right>ul>li{
     margin-left: auto; 
 }
 
 .menu_right>ul>li:first-child{
     width: 70%;
-    margin-right: 2rem;
+    margin-right: 2em;
 }
 
 .menu_right>ul>li ~:not(:first-child){
@@ -242,8 +335,8 @@ margin-left: 15px;
 }
 .input {   
     width: 70%;
-    padding: 13px;      /* Thêm khoảng cách bên trong input */
-    font-size: 16px;    /* Tăng kích thước font chữ */
+    padding: 0.9em;      /* Thêm khoảng cách bên trong input */
+    font-size: 0.9em;    /* Tăng kích thước font chữ */
     border: none;
     background-color: transparent;
     outline: none;
@@ -253,11 +346,11 @@ margin-left: 15px;
     outline: none;
 }
 .menu_right>ul>li>div {
-    border: 2px solid #000;
-    border-radius: 50px;
+    border: 1px solid #000;
+    border-radius: 3em;
 }
 .menu_right>ul>li>a>i{
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 
@@ -273,7 +366,6 @@ margin-left: 15px;
 
 /*Quảng cáo*/ 
 .Introduction_Page{
-    padding-top: 140px;
     overflow: hidden;
     position: relative;
 }
@@ -292,7 +384,7 @@ margin-left: 15px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .video-container video {
     width: 100%;
@@ -302,30 +394,32 @@ margin-left: 15px;
 
 
 .Introduction_Page>.Introduction {
-    padding-top: 60px;
-    padding-bottom: 110px;
+    padding-top: 30vh;
+    padding-bottom: 10vh;
     display: flex;
     justify-content: center;
 }
 
-.Introduction>div:first-child{
+.Introduction>.left_introduction{
     width: 42%;
+    font-size: 2vh;
 }
 
-.Introduction>div:last-child{
+.Introduction> .right_introduction{
     width: 44%;
     margin-left: 5%;
+    font-size: 2vh;
 }
 .right_introduction{
     text-align: right;
     background-image: linear-gradient(to right, rgba(0,0,0,0.5) 99%, #5270ff 1%);
-    padding: 20px;
+    padding: 2em;
     border: 1px solid #000000 ;
-    border-radius: 15px;
+    border-radius: 1em;
 }
 .right_introduction:hover{
     border: 1px solid #5270ff ;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.5);
     transition: 0.2s ease-in-out;
 }
 .right_introduction:hover > hr{
@@ -340,18 +434,19 @@ margin-left: 15px;
 .Bookoftheday{
     color:white;
     width: 100%;
+    font-size: 1.25em;
 }
 
 .SeeMore {
     display: flex;
     justify-content: right;
-    margin-top: 5%;
+    margin-top: 2em;
 }
 .SeeMore > a{
-    padding: 7px;
+    padding: 0.6em;
     margin-left: 10%;
     border: 1px solid rgb(42, 192, 251);
-    border-radius: 20px;
+    border-radius: 3em;
 }
 .SeeMore > a:hover{
     background-color: rgb(42, 80, 251);
@@ -361,9 +456,6 @@ margin-left: 15px;
     margin: 0;
     padding: 0;
     color: white;
-}
-.Star > i{
-    color: orange;
 }
 /*Hiệu ứng đánh máy cho chữ lớn */
 .ad>li:first-child>p {
@@ -377,11 +469,12 @@ margin-left: 15px;
 .Introduction>div:first-child>a>p {
     width: 20%;
     margin-top: 10px;
-    padding: 5px;
-    border: 2px solid rgb(42, 192, 251);
+    padding: 0.5em;
+    border: 1px solid rgb(42, 192, 251);
     text-align: center;
-    border-radius: 15px;
+    border-radius: 3em;
     color:white;
+    font-size: 1.3em;
 }
 
 .Introduction>div:first-child>a>p:hover {
@@ -391,11 +484,39 @@ margin-left: 15px;
     transition: 0.3s ease-in-out;
 }
 
-.Introduction>div:last-child>a>img {
-    margin-top: 65px;
-    border-radius: 50px;
-    width: 100%;
+
+
+.Introduction_Page>.Category{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2vh;
 }
+.List{
+    text-align: center;
+    font-weight: bold;
+}
+.List > a > p{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3em;
+}
+
+.List > a > p:hover{
+    color: rgb(0, 38, 255);
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.List > div > img{
+    width: 5em;
+}
+
+.List:nth-child(2) > div > img{
+    width: 4em;
+}
+
 
 /*------------Slide Show------------*/
 .TopSellBook{
@@ -421,8 +542,7 @@ margin-left: 15px;
     position: relative;
     margin-left: 1%;
     padding-right: 20px;
-
-  }
+}
   
   /* Hide the images by default */
   .mySlides {
@@ -444,7 +564,7 @@ margin-left: 15px;
     padding: 16px;
     color: rgb(255, 8, 0);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1em;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -452,7 +572,7 @@ margin-left: 15px;
   
   /* Position the "next button" to the right */
   .next {
-    margin-left: 89%;
+    margin-left: 90%;
     border-radius: 3px 0 0 3px;
   }
   
@@ -495,26 +615,27 @@ margin-left: 15px;
 
 .Book_info{
     width: 55%;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
     animation: fade 1.5s;
+    font-size: 2vh;
 }
 
 .Book_info > h3{
-    font-size: 28px;
+    font-size: 2em;
     color:#f6ff00;
 }
 .Book_info > div>i{
     color:#f6ff00;
 }
 .Book_info > p{
-    font-size: 18px;
+    font-size: 1.5em;
     color: white;
     text-align: justify;
 }
 .Book_info > a > p{
     padding: 5px;
-    border: 2px solid aquamarine;
+    border: 1px solid aquamarine;
     width: 20%;
     text-align: center;
     border-radius: 20px;
@@ -524,37 +645,6 @@ margin-left: 15px;
    background-color: #004cfe;
    transition: 0.3s ease-in-out;
 }
-.Introduction_Page>.Category{
-    background-color: white;
-}
-.tasks {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    margin-left: 10%;
-}
-.tasks>li {
-    width: 20%;
-}
-.task > li:hover > a{
-    color: rgb(0, 76, 255);
-}
-
-.task {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 auto;
-}
-.task>li>a{
-    color: black;
-    font-weight: bold;
-}
-.task>li>a>img {
-    margin-left: 10px;
-}
-
-
 
 
 
@@ -562,45 +652,47 @@ margin-left: 15px;
 .BookSection_Introduction{
     background-image: url(../Assest/Home/background-mau-sac-xanh-duong_094943960.jpg);
     background-size: cover;
-    background-repeat: none;
+    background-repeat:no-repeat;
     background-position: center;
     padding-top: 6%;
     padding-bottom: 6%;
     text-align: center;
+    font-size: 3vh;
 }
 .BookSection_Introduction > p{
     width: 60%;
     margin: 0 auto;
     margin-bottom: 3%;
     color: white;
+    font-size: 1.3em;
 }
 
 .BookSection_Introduction > p:first-child{
-  font-size: 36px;
   font-weight: bold;
+  font-size: 1.3em;
 }
 
 .BookSection_Introduction > p:nth-child(2){
-    font-size: 25px;
+    font-size: 1.3em;
   }
 
 /*------------ Book Show --------------------*/
 .Book_Container{
-    margin-top: 50px;
+    margin-top: 2em;
     margin-bottom: 5%;
     margin-left: 4%;
     padding-bottom: 1%;
     background-color: white;
     width: 93%;
     border-radius: 0 15px 0 0;
-    font-size: 16px;
+    font-size: 2.4vh;
 }
 .Book_Container > h3{
     background-color: black;
     color: white;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 10px;
     border-radius: 0 15px 0 0;
 }
@@ -623,8 +715,8 @@ margin-left: 15px;
     color: red;
     width: 10%;
     border: 2px solid red;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 0.5em;
+    padding: 0.5em;
     margin: 0 auto;
 }
 .Book_Container > a > p:hover{
@@ -641,10 +733,12 @@ transition: 0.3s ease-in-out;
     font-weight: bold;
 }
 .ShowCase{
+    position: relative;
     display: flex;
     background-color: white;
     margin-left: 1%;
     margin-bottom: 1%;
+    flex-wrap: nowrap;
 }
 
 .Left_ShowCase{
@@ -653,6 +747,8 @@ transition: 0.3s ease-in-out;
 
 .Right_ShowCase{
     width: 70%;
+    
+
 }
 
 .Left_ShowCase > .Book{
@@ -695,6 +791,11 @@ transition: 0.3s ease-in-out;
     margin-left: 2%;
     display: flex;
     align-items: center;
+    position: sticky;
+    transform: translateY(10%);
+    top: 0; /* Adjust top as necessary to position it correctly */
+    padding: 20px; /* Add padding for better appearance */
+    z-index: 10; /* Ensure it appears above other content */
 }
 
 
@@ -706,7 +807,7 @@ transition: 0.3s ease-in-out;
     border: 2px solid red;
     color: red;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 0.5em;
     width: 30%;
     text-align: center;
 }
@@ -729,32 +830,33 @@ transition: 0.3s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
+    padding-top: 1em;
+    padding-bottom:  1em;
+    border-radius: 1em;
     margin: 0 auto;
     margin-bottom: 5%;
+    font-size: 3vh;
 }
 
 .Subcription >p{
     color: white;
     text-align: right;
-    width: 50%;
+    width: 40%;
     background-color: rgb(1, 102, 254) !important;
-    font-size: 20px;
+    font-size: 1em;
     padding: 0;
     margin: 0;
 }
 
 .search{
-    margin-left: 30px;
-    font-size: 20px;
-    border-radius: 7px;
-    border-color: black;
+    margin-left: 1em;
+    font-size: 1em;
+    width: 50%;
+    border-radius: 0.3em;
 }
 
 .nut{
-    font-size: 20px;
+    font-size: 1em;
     margin-left: 30px ;
     color: white;
     padding: 6px;
@@ -808,11 +910,12 @@ footer {
     background-color: white;
     padding: 0;
     margin: 0;
+    font-size: 2.5vh;
 }
 
 .Footer_content{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 .Conclusion{
     display: flex;
@@ -841,10 +944,10 @@ footer {
 
 .Conclusion_right> ul > li{
     margin-left: 10%;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 .Conclusion_right> ul{
-   margin-top: 10px;
+   margin-top: 0.1em;
    display: flex;
    justify-content: center;
 }
@@ -852,6 +955,7 @@ footer {
 
 .Superlink{
     display: flex;
+    margin-bottom: 2em;
 }
 .Superlink > .Link{
     margin-left: 5%;
@@ -860,7 +964,7 @@ footer {
 .Superlink > .Link > h3{
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
 }
 .Superlink > .Link > ul > li{
     padding: 0;
@@ -879,10 +983,10 @@ footer>a>p {
 
 .Link >ul >li > a:hover{
     color:#004cfe;
-    transform: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .Conclusion_right > ul > li > a > i:hover{
     color:#004cfe;
-    transform: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }

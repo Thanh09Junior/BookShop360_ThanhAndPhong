@@ -3,12 +3,11 @@
     font-family: Helvetica, sans-serif, Arial, 'Times New Roman';
     scroll-behavior: smooth;
 }
-
-@media only screen and (max-width: 950px){
-    *{
-        display: none;
-    }
+*{
+    scroll-behavior: smooth;
 }
+
+
 
 ::-webkit-scrollbar { width: 0 !important }
 .preloader {
@@ -29,23 +28,24 @@
 
 .preloader > img {
     width: 50%;
-    margin-bottom: 20px; /* Khoảng cách giữa GIF và thanh tiến độ */
+    margin-bottom: 2vh; /* Khoảng cách giữa GIF và thanh tiến độ */
 }
 
 .progress-container {
     width: 80%; /* Chiều rộng của thanh tiến độ */
     background-color: #333; /* Màu nền của thanh tiến độ */
-    height: 8px; /* Chiều cao của thanh tiến độ */
-    border-radius: 4px; /* Bo góc của thanh tiến độ */
+    height: 0.8vh; /* Chiều cao của thanh tiến độ */
+    border-radius: 1vh; /* Bo góc của thanh tiến độ */
     position: relative;
 }
 
+
 .progress-bar {
+    background-color: white;
     width: 0%;
     height: 100%;
-    padding: 4px;
-    background-color: #fff; /* Màu thanh tiến độ */
-    border-radius: 4px; /* Bo góc của thanh tiến độ */
+    padding: 1vh;
+    border-radius: 1vh; /* Bo góc của thanh tiến độ */
     position: relative;
 }
 
@@ -55,7 +55,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0); /* Màu chữ trong thanh tiến độ */
-    font-size: 18px; /* Kích thước chữ */
+    font-size: 2.5vh;
     font-weight: bold;
 }
 
@@ -190,6 +190,9 @@ body {
 .sec2 {
     position: relative;
 }
+
+
+
 /* Menu */
 nav {
     display: flex;
@@ -203,6 +206,7 @@ header {
     margin-top: 1%;
     color: white;
     transition: top 0.3s;
+    font-size: 2.5vh;
 }
 
 header.fixed {
@@ -230,21 +234,21 @@ header.hidden {
 }
 
 .menu_left>ul>li{
-    margin-right: 1.3rem;
+    margin-right: 1.3em;
 }
 
 
 
 .menu_left>ul>li>a {
-    font-size: 14px;
+    font-size: 0.8em;
     display: inline-block;
     position: relative;
     color: rgb(255, 255, 255);
     border: 1px solid #5e676a;
     background-color: transparent;
     overflow: hidden;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 0.8em;
+    border-radius: 1.3em;
     transition: color 0.3s ease-in-out;
 }
 
@@ -270,7 +274,7 @@ header.hidden {
 /* logo menu */
 .Nav_Logo {
     width: 30%;
-    font-size: 25px;
+    font-size: 1.5em;
 
 }
 .Nav_Logo >p {
@@ -318,7 +322,7 @@ header.hidden {
 
 .Cinema_content > .Over_View{
     display: flex;
-
+    font-size: 2.4vh;
 }
 
 .Cinema_content > .Over_View > div:nth-child(2){
@@ -338,14 +342,15 @@ header.hidden {
     justify-content:space-between;
     margin-right: 4%;
     padding-bottom: 12vh;
+    font-size: 2vh;
 }
 
 .Main_Text > .Header >h1{
-    font-size: 30px;
+    font-size: 2.5em;
 }
 
 .Main_Text > .Header >h2{
-    font-size: 38px;
+    font-size: 3em;
 }
 
 .Cinema_content > .Over_View{
@@ -353,10 +358,10 @@ header.hidden {
 }
 
 .Cinema_content > .Over_View > div:nth-child(3) > ul > li > h2{
-    font-size: 20px;
+    font-size: 1.4em;
 }
 .Cinema_content > .Over_View > div:nth-child(4) > ul > li > h2{
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 .Cinema_content > .Over_View > div > ul > li{
@@ -364,7 +369,7 @@ header.hidden {
 }
 
 .Quote{
-    font-size: 25px;
+    font-size: 2em;
     width: 40%;
     text-align: right;
 }
@@ -394,31 +399,25 @@ header.hidden {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.Over_View > div:first-child > a > p:hover{
-   background-color: #ff9800;
-   color: white;
-   transition: 0.3s ease-in-out;
-}
-
-
 /*--------------SEC 2 ----------------*/
 .sec2{
     background-color: white;
     display: flex;
     padding-top: 7%;
     padding-bottom: 7%;
+    font-size: 2.5vh;
 }
 .sec2 > p{
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
-    font-size: 24px;
+    font-size: 1.3em;
     margin-left: 2%;
     width: 18%;
 }
 
 .sec2 h2{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
+    font-size: 2em;
     margin: 0;
 }
 
@@ -434,9 +433,13 @@ header.hidden {
 .Welcome > ul > li{
     margin-bottom: 5%;
     text-align: justify;
-    font-size: 18px;
+    font-size: 1em;
 }
 
+.Person:hover > div > p{
+    color: #ff9f0f;
+    transition: 0.3s ease-in-out;
+}
 
 .Highlight{
     display: flex;
@@ -458,6 +461,7 @@ header.hidden {
 /*---- Section 3 ----*/
 .sec3{
     background-color: black;
+    font-size: 2.5vh;
 }
 
 .Menu_header{
@@ -470,14 +474,14 @@ header.hidden {
     width: 17%;
     margin: 0;
     color:#ff9f0f;
-    font-size: 22px;
+    font-size: 1.5em;
 }
 
 .Menu_header > p:last-child{
     margin: 0;
     width: 35%;
     color:#ffffff;
-    font-size: 28px;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -488,7 +492,7 @@ header.hidden {
     padding-left: 2%;
     margin-right: 2%;
     display: flex;
-    font-size: 19px;
+    font-size: 1.2em;
 }
 
 .Menu_List > .Book > .Book_header > a:hover{
@@ -529,6 +533,7 @@ header.hidden {
 /*-------- SEC 3 ------------*/
 .sec3_header{
     position: relative;
+    font-size: 2.5vh;
 }
 
 .sec3_img {
@@ -550,19 +555,19 @@ header.hidden {
 }
 
 .Header_content > h2{
-    font-size: 30px;
+    font-size: 2em;
     color: #ff9f0f;
 }
 
 .Header_content > ul > li{
     color: white;
-    font-size: 25px;
+    font-size: 1.4em;
     margin-bottom: 5%;
     text-align: justify;
 }
 
 .Header_content > ul > li:last-child > p{
-    font-size: 16px;
+    font-size: 0.8em;
     text-align: right;
 }
 
@@ -575,12 +580,12 @@ header.hidden {
 
 .end > p:first-child{
     color: #ff9f0f;
-    font-size: 33px;
+    font-size: 2em;
 }
 
 .end > p:nth-child(2){
     margin: 0 auto;
-    font-size: 26px;
+    font-size: 1.3em;
     width: 50%;
 }
 
@@ -595,7 +600,7 @@ header.hidden {
 }
 .Person > div > p{
     color: #aaaaaa;
-    font-size: 18px;
+    font-size: 1em;
 }
 .img > img{
     width: 50%;
@@ -609,6 +614,7 @@ header.hidden {
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
+    font-size: 2.5vh;
 }
 
 .Author_Container > div{
@@ -627,13 +633,13 @@ header.hidden {
 
 .Author_img > img{
     width: 100%;
-    height: 280px;
+    height: 15em;
     transition: 0.2s ease-in-out;
 }
 
 .Author_content{
     display: flex;
-    font-size: 14px;
+    font-size: 0.8em;
 
 }
 
@@ -646,11 +652,12 @@ footer {
     background-color: white;
     padding: 0;
     margin: 0;
+    font-size: 2.5vh;
 }
 
 .Footer_content{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 .Conclusion{
     display: flex;
@@ -679,10 +686,10 @@ footer {
 
 .Conclusion_right> ul > li{
     margin-left: 10%;
-    font-size: 24px;
+    font-size: 1.5em;
 }
 .Conclusion_right> ul{
-   margin-top: 10px;
+   margin-top: 0.1em;
    display: flex;
    justify-content: center;
 }
@@ -690,6 +697,7 @@ footer {
 
 .Superlink{
     display: flex;
+    margin-bottom: 2em;
 }
 .Superlink > .Link{
     margin-left: 5%;
@@ -698,7 +706,7 @@ footer {
 .Superlink > .Link > h3{
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 1em;
 }
 .Superlink > .Link > ul > li{
     padding: 0;
@@ -717,10 +725,10 @@ footer>a>p {
 
 .Link >ul >li > a:hover{
     color:#004cfe;
-    transform: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .Conclusion_right > ul > li > a > i:hover{
     color:#004cfe;
-    transform: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }

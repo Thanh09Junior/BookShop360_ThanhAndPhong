@@ -4,9 +4,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 200px;
-    padding-bottom: 90px;
+    padding-top: 15%;
+    padding-bottom: 10%;
     overflow: hidden;
+    font-size: 2.5vh;
 }
 
 
@@ -14,14 +15,14 @@
     display: flex;
     justify-content: center;
     color: white;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .Cinema > .Cinema_Container >.Social_icon{
     display: flex;
 }
 .Social_icon > a > i{
-    font-size: 24px;
-    margin-right: 30px;
+    font-size: 1.5em;
+    margin-right: 1em;
 }
 .Cinema_Container > .Content{
     width: 41%;
@@ -35,7 +36,7 @@
     font-weight: bold;
 }
 .Cinema_Container > .Clock >p{
-    font-size: 20px;
+    font-size: 1.5em;
 }
 .Cinema >a>p{
     max-width: 100px;
@@ -69,6 +70,7 @@
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
+    font-size: 2.5vh;
 }
 
 .Introduction_container > .Bookshop_img{
@@ -94,11 +96,11 @@
 .Introduction_container > .Content >.Subcontent{
     margin-bottom: 30%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 1em;
 }
 .Introduction_container > .Bookshop_img > img:hover {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Tạo bóng khi hover */
-    border: 2px solid rgb(0, 68, 255);
+    border: 1px solid rgb(0, 68, 255);
     transition: 0.2s ease-in-out;
 }
 
@@ -111,12 +113,17 @@
 }
 
 /*---------- Bookshop_Services-----------*/
+.Bookshop_Services{
+    font-size: 2.5vh;
+}
+
 .Service_container{
     background-color: white;
     padding-top: 80px;
     padding-bottom: 150px;
     display: flex;
     justify-content: center;
+    font-size: 1em;
 }
 
 .Service_container > .Service{
@@ -133,13 +140,16 @@
     transition: 0.2s ease-in-out;
 }
 .Service_container > .Service > i{
-    font-size: 24px;
+    font-size: 1.5em;
     color: rgb(0, 60, 255);
 }
 .Service_container > .Service > h3{
     color: rgb(0, 60, 255);
 }
-.Service_container > .Service > p{
+.Service_container > .Service > div{
+    min-height: 20vh;
+}
+.Service_container > .Service > div > p{
     color: black;
     text-align: justify;
 }
@@ -162,8 +172,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 80px;
-    padding-bottom: 100px;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    font-size: 2.5vh;
 }
 .Owner_container > .Person > h3{
     color:#7088ff;
@@ -210,6 +221,7 @@
     padding-top: 80px;
     padding-bottom: 150px;
     border: 1px solid black;
+    font-size: 2.5vh;
 }
 .Subhelp:hover{
     box-shadow: 10px 10px 20px rgba(25, 0, 255, 0.5);
@@ -220,7 +232,7 @@
     margin: 0;
 }
 .Help_section{
-    padding-top: 80px;
+    padding-top: 3em;
 }
 .Help_content{
     display: flex;
@@ -229,8 +241,8 @@
 
 .Help_section > .Help_content > .Subhelp{
     display: block;
-    line-height: 60px;
-    font-size: 20px;
+    line-height: 3em;
+    font-size: 1.3em;
     background-image: linear-gradient(to left, rgba(246, 107, 0, 0.4) 99%, blue 1%);
     padding: 20px;
     width: 35%;
@@ -277,7 +289,7 @@
 }
 .Form> div:first-child {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 .Forms{
     border: 2px solid #5270ff;
@@ -299,7 +311,7 @@
 }
 .Forms > form > input{
     display: block;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .Forms > form > input:hover{

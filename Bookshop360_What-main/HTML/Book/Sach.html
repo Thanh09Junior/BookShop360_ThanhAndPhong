@@ -5,23 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookShop360 - Trang Chủ</title>
-    <link rel="shortcut icon" href="../Assest/Home/Icon.png" />
+    <link rel="shortcut icon" href="../../Assest/Home/Icon.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="../CSS/Reponsive/shop_repo.css" />
-    <link rel="stylesheet" href="../CSS/shop.css" />
-    <link rel="stylesheet" href="../CSS/index.css" />
+    <link rel="stylesheet" href="../../CSS/Reponsive/shop_repo.css" />
+    <link rel="stylesheet" href="../../CSS/Book.css" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="Arrow_Up">
-        <a href="#"><i class="fa-solid fa-caret-up" style="color: white;"></i></a>
-    </div>
-    <div id="blurredBackground" class="blurred"></div>
-    <div style="display: none;">
-
-    </div>
     <div id="Black_glass"></div>
     <div id="Account" class="Account">
         <div class="Login_Panel">
@@ -57,15 +50,15 @@
         <nav>
             <div class="Nav_Logo">
                 <div>
-                    <a href="../index.html"><img src="../Assest/Home/logo.png" url="logo" /></a>
+                    <a href="../../index.html"><img src="../../Assest/Home/logo.png" url="logo" /></a>
                 </div>
             </div>
             <div class="menu_left">
                 <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="../HTML/GioiThieu.html">Giới thiệu</a></li>
+                    <li><a href="../../index.html">Trang chủ</a></li>
+                    <li><a href="../../HTML/GioiThieu.html">Giới thiệu</a></li>
                     <li>
-                        <a href="../HTML/Shop.html"> Mua sách</a>
+                        <a href="../../HTML/Shop.html"> Mua sách</a>
                     </li>
                     <li>
                         <a href="#" class="toggle-submenu"><i class="fa-solid fa-chevron-right"></i> Fanpage</a>
@@ -82,7 +75,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="../Hightlight.html">Hightlight</a>
+                        <a href="../../Hightlight.html">Hightlight</a>
                     </li>
                 </ul>
             </div>
@@ -95,47 +88,104 @@
                         </div>
                     </li>
                     <li><a href="#" id="login"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="../HTML/giohang.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="../../HTML/giohang.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <section class="shop">
+    <section class="book">
         <div>
-            <p><a href="">Trang chủ</a> > <span id="category-title" style="color: #c92127; font-weight: bold;"></span>
-            </p>
+            <p><a href="">Trang chủ</a> > <span id="category"></span> > <span id="title"
+                    style="color: #c92127; font-weight: bold;"></span></p>
         </div>
-        <div class="shop_container">
-            <div class="Nav_Category">
-                <h2>Danh sách sản phẩm</h2>
-                <ul id="category-list">
-                    <!-- Category links -->
-                </ul>
-                <hr />
-                <h2>Giá tiền</h2>
-                <ul id="price-range">
-                    <!-- Price range filters -->
-                </ul>
-                <hr />
+        <div class="book_container">
+            <div class="Book_Left animate__animated animate__fadeInLeft">
+                <div class="img" id="main_image" style="margin-right: 30%" ;></div>
+                <div class="Small_img">
+                    <div><img id="small_img_1" /></div>
+                    <div><img id="small_img_2" /></div>
+                    <div><img id="small_img_3" /></div>
+                    <div><img id="small_img_4" /></div>
+                </div>
+                <div class="Buy_Book">
+                    <a href="#" class="buy-now" id="buy-now">
+                        <p><i class="fa-solid fa-cart-shopping"></i> Thêm vào giỏ hàng</p>
+                    </a>
+                    <a href="">
+                        <p>PDF đọc thử</p>
+                    </a>
+                </div>
+                <div class="Additional">
+                    <p style="font-weight: bold;">
+                        Chính sách ưu đãi của BookShop 360
+                    </p>
+                    <ul>
+                        <li>+ Thời gian giao hàng: Giao nhanh và uy tín</li>
+                        <li>+ Chính sách đổi trả: Đổi trả miễn phí toàn quốc</li>
+                        <li>+ Chính sách khách sỉ: Ưu đãi khi mua số lượng lớn</li>
+                    </ul>
+                </div>
             </div>
-            <div class="BookShelf">
-                <div class="Sort">
-                    <p>Sắp xếp theo: </p>
-                    <select class="custom-select" id="sort-select">
-                        <option value="1">Bán Chạy Tuần</option>
-                        <option value="2">Bán Chạy Tháng</option>
-                        <option value="3">Sách Của Ngày</option>
-                        <option value="4">Giảm Giá</option>
-                    </select>
+            <div class="Book_Right animate__animated animate__fadeInRight">
+                <div class="Header">
+                    <h3 id="book_title"></h3>
+                    <div class="Header_Info">
+                        <div>
+                            <p>Tác giả: <span id="author" style="font-weight: bold;"></span></p>
+                            <p>Nhà xuất bản: <span id="publisher" style="font-weight: bold;"></span></p>
+                        </div>
+                        <div>
+                            <p>Nhà kiểm duyệt: <span id="censorship" style="font-weight: bold;"></span></p>
+                            <p>Thể loại bìa: <span id="cover_type" style="font-weight: bold;"></span></p>
+                        </div>
+                    </div>
+                    <hr />
+                    <p id="price" style="color: #c92127; font-size: 30px; font-weight: bold;"></p>
                 </div>
-                <hr />
-                <div id="books-content" class="BookShelf_content">
-                    <!-- Books will be loaded here -->
+                <div class="book_info">
+                    <h3>Thông tin chi tiết</h3>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Mã hàng</td>
+                                <td id="product_code"></td>
+                            </tr>
+                            <tr>
+                                <td>Nhà cung cấp</td>
+                                <td id="supplier"></td>
+                            </tr>
+                            <tr>
+                                <td>Tác giả</td>
+                                <td id="author_detail"></td>
+                            </tr>
+                            <tr>
+                                <td>Người dịch</td>
+                                <td id="translator"></td>
+                            </tr>
+                            <tr>
+                                <td>NXB</td>
+                                <td id="publisher_detail"></td>
+                            </tr>
+                            <tr>
+                                <td>Năm XB</td>
+                                <td id="publish_year"></td>
+                            </tr>
+                            <tr>
+                                <td>Số Trang</td>
+                                <td id="page_count"></td>
+                            </tr>
+                            <tr>
+                                <td>Hình thức</td>
+                                <td id="form"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <div class="Next_Previous">
-                    <a href="#"><i class="fa-solid fa-caret-left"></i></a>
-                    <p> 1 </p>
-                    <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+                <div class="Book_description">
+                    <h3>Mô tả sản phẩm</h3>
+                    <ul id="description">
+                        <!-- Description content will be dynamically loaded here -->
+                    </ul>
                 </div>
             </div>
         </div>
@@ -150,7 +200,7 @@
         <div class="Pop-up" id="popup">
             <a onclick="hidePopup()"><i class="fa-solid fa-xmark" style="float: right;"></i></a>
             <div class="img_container">
-                <img src="../Assest/Home/logo.png" />
+                <img src="../../Assest/Home/logo.png" />
             </div>
             <div class="Content">
                 <h3>Thông báo</h3>
@@ -213,7 +263,7 @@
                 </div>
                 <div class="Conclusion_right">
                     <div>
-                        <img alt="Picture" src="../Assest/Home/logo.png">
+                        <img alt="Picture" src="../../Assest/Home/logo.png">
                     </div>
                     <ul>
                         <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
@@ -228,12 +278,13 @@
             <p>© 2024 Bản quyền thuộc về Junior Thành và Thanh Phong. Bảo lưu mọi quyền sở hữu.</p>
         </a>
     </footer>
-    <script src="../JavaScript/Nav.js"></script>
-    <script src="../JavaScript/Pop-up.js"></script>
-    <script src="../JavaScript/Arrow_up.js"></script>
+    <script src="../../JavaScript/Nav.js"></script>
+    <script src="../../JavaScript/Pop-up.js"></script>
+    <script src="../../JavaScript/Arrow_up.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../JavaScript/datasever.js"></script>
-    <script src="../JavaScript/Shop.js"></script>
+    <script src="../../JavaScript/Book.js"></script>
+    <script src="../../JavaScript/Bookdata.js"></script>
+    <script src="../../JavaScript/datasever.js"></script>
     <script src="//code.tidio.co/nonyzqrlawdmulhzdgjx19a3cpwzgq1h.js" async></script>
     <script>
         AOS.init();
